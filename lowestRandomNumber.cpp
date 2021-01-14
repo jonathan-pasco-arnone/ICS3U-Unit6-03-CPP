@@ -14,9 +14,9 @@ int lowestFinder(std::array<int, N> numbers) {
 
     /* This is 101 so the number is always
     bigger than the first for loop check */
-    int previousLowestNumber = 101;
+    int previousLowestNumber = numbers[0];
 
-    for (int loopCounter = 0; loopCounter < 10; loopCounter++) {
+    for (int loopCounter = 1; loopCounter < 10; loopCounter++) {
         if (previousLowestNumber > numbers[loopCounter]) {
             previousLowestNumber = numbers[loopCounter];
         }
